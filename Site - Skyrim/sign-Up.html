@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrim - Sign Up</title>
+    <link rel="stylesheet" href="style-sign-up.css">
+</head>
+<body>
+    <header>   
+        <nav>
+            <div class="navBar"> 
+                <a href="/index.html" id="link-homepage"> THE ELDER SCROLLS V : SKYRIM <sup>®</sup>  </a>
+            </div>
+        </nav>
+        
+    </header>
+    <section>
+        <div class='container-form'>
+            <form name='log-in'>
+                <p class=''> CREATE USER</p> 
+                <input id='user-input' type="text" placeholder="nickname">
+                <p class=''> YOUR BEST E-MAIL</p> 
+                <input id='email-input' type="text" placeholder="e-mail">
+                <p> CREATE A PASSWORD</p>
+                <input id="password-input" type="password" placeholder="******">
+                <P> CONFIRM PASSWORD </P>
+                <input id="confirm-password" type="password" placeholder="******">
+                <P>
+                    <a href="/confirm-email.html" id="create-account-button"> CREATE ACCOUNT </a>
+                </P>
+                <P>
+                    <span id="create-account-button-block"> CREATE ACCOUNT </span>
+                </P>
+                <p>
+                    <input type="checkbox" onclick="turnCheckBoxTrue()"> 
+                    I Agree the terms of Provacy and Justice
+                </p>
+                <p>
+                    <span id="alert">You need to confirm the terms to proceed </span>
+                </p>
+                <p>
+                    <input type="checkbox"> 
+                    I want to receive e-mails about updates and news (optional)
+                </p>
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <img id="plataforms" src="images/plataforms.png">
+    </footer>
+    <script>
+        (function() {
+            toogleCheckBox = false
+            userInput = ''
+            emailInput = ''
+            passwordInput = ''
+            passwordConfirm = ''
+
+            document.getElementById('alert').style.display ='none'
+            document.getElementById('create-account-button-block').style.display =''
+            document.getElementById('create-account-button').style.display ='none'
+
+        })();
+        
+        function turnCheckBoxTrue () {
+
+            if (toogleCheckBox == false) {
+                document.getElementById('create-account-button-block').style.display ='none'
+                document.getElementById('create-account-button').style.display =''
+                toogleCheckBox = true 
+
+            } else {
+                toogleCheckBox = false 
+                document.getElementById('create-account-button').style.display ='none'
+                document.getElementById('create-account-button-block').style.display =''
+    
+            }
+        }
+
+       
+    </script>
+</body>
+</html>
