@@ -8,4 +8,8 @@
     - JAVASCRIPT
  
 # LAYOUT
-![app home](./Sphynxx-running.mp4)
+![app home](./screenShots/game.png)
+
+# VIDEO
+## Veja o video: 
+![app video](./Sphynxx-running.mp4)
