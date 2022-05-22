@@ -8,4 +8,4 @@
     - JAVASCRIPT
  
 # LAYOUT
-![app home](./running.mp4)
+![app home](./Sphynxx-running.mp4)
