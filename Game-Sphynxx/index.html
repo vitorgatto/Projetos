@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphynxx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <!-- AUDIO SECCION -->
+<div class="audios">
+    <audio id='soundTrack' src="audios/Sphynxx.mp3" alt="SEU NAVEGADOR NAO SUPORTA O AUDIO" ></audio>
+    <audio id='introduction-audio'src="audios/audio-intro.mp3"></audio>
+    <audio id="thunder-sound"src="audios/thunder.mp3" ></audio>
+    <audio id="wrong-letter-audio-1" src="audios/audio-erro1.mp3"></audio>
+    <audio id="wrong-letter-audio-2" src="audios/audio-erro2.mp3"></audio>
+    <audio id="game-over-audio" src="audios/audio-erro3.mp3"></audio>
+    <audio id="win-Game-Audio" src="audios/audio-acerto.mp3" id="right-letter-audio"></audio>
+</div>
+
+    <header>
+        <h1>S p h y n x x</h1>
+    </header>
+    <div class="initial-canva">
+        <p>
+            Se você está aqui, é porque foi trazido pelo Deus 
+            Thot, pai da sabedoria, das artes e do 
+            conhecimento. Este é seu teste. 
+            Chegou o momento de provar se você será de grande valor
+            ou apenas mais um mortal no reino dos vivos.
+        </p>
+        <p>
+            <span>PARA UMA MELHOR EXPERIÊNCIA, ATIVE A TELA CHEIA (F11)</span>
+        </p>
+        <span id="start-button" onclick="startGame()"> JOGAR </span>
+    </div>
+    <div class="introduction-canva">
+        <p>
+            Em uma era antiga, no Egito. Havia uma lenda. Um tesouro 
+            inimaginavel, abundante . Capaz de deixar reis e soberanos 
+            de joelhos. Mas o tesouro era protegido por uma esfinge. 
+            O escolhido deve desvendar seu enigma para que desfrute do 
+            grande tesouro de Thot.
+            A lenda se prova real, mortal. Thot lhe escolheu para seu teste. 
+            Você tem três chances para desvendar seu mistério. Seu destino está em suas mãos.
+        </p>
+        <span id="skip-button" onclick="skipIntroduction()">  </span>
+    </div>
+    <div class="game-over-canva">
+        <span id="game-over-text">FIM DE JOGO!</span>
+        <span id="replay-button" onclick="replay()"> Jogar Novamente </span>
+    </div>
+    <div class="canva-in-game">
+        <div class="player-status">
+            <span class="span-title"> Chances Restantes: </span>
+            <span id="chances-count"> </span>
+            <span id='theme' class="span-title"> Tema: EGITO</span>
+            <span id='timer-span' class="span-title"> Tempo: </span>
+            <span id="timer"> </span>
+            <span id="timer-ending"> </span>
+            <span id="wrong-letter-span"> Letras Erradas: </span>
+            <span id="wrong-letters-container">  </span>
+        </div>
+        <div id="container-game">
+            <span class="right-letter-container">  </span>
+        </div>    
+        </div>
+    </div>
+    <footer>
+            <div>
+                <p id="credits">
+                    <p>Todas as imagens e áudios são livres de direitos.</p>
+                    <p>
+                        <span class="credits">Criado por:</span>João Gatto
+                        <p> <span>Tecnologias: </span>
+                            <div id="lists">
+                                <ul>
+                                    <li>HTML 5</li>
+                                    <li>JavaScript</li>
+                                    <li>CSS 3</li>
+                                </ul>
+                            </div>
+                        </p>
+                    </p>
+                </p>
+        </div>
+        </footer>
+<script src="script-screen.js"></script>
+<script src="script-game.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Sphynxx;
+    src: url(fonts/Khodijah\ Free.otf);
+}
+@keyframes opacity {
+    0% {
+        opacity: 0%
+    }
+    100% {
+        opacity:100%
+    }
+}
+
+/*--- MAIN PAGE STYLE ---*/
+body {
+    margin: 0px;
+    background-image: url('imgs/bg.jpg');
+    background-size: 150%;
+
+}
+
+H1 {
+    animation: opacity 1s;
+    text-shadow: #783228 3px 3px 3px;
+    color: #efae6c;
+    font-size: 70px;
+     display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+p {
+    animation: opacity 6s;
+    margin: 10px;
+    font-size: 30px;
+    font-family: Macondo;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+p > span {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--- INITIAL CANVA STYLE --- */
+
+.initial-canva {
+    display: block;
+    animation: opacity 2s;
+    border-radius: 10px;
+    border: solid 3px #efae6c;
+    background-color: #efae6c;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    padding: 10px;
+
+    width: 1000px; 
+    height: justify;
+}
+#start-button {
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    box-shadow: #000 3px 3px 3px;
+    font-size: 60px;
+    font-family:Sphynxx;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+#start-button:hover {
+    background-color: #783228;   
+    transition: 1s;
+}
+/*--- INTRODUCTION CANVA ---*/
+
+.introduction-canva {
+    display: block;
+    animation: opacity 2s;
+    border-radius: 10px;
+    border: solid 3px #efae6c;
+    background-color: #efae6c;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    padding: 10px;
+
+    width: 1000px; 
+    height: justify;
+}
+#skip-button {
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    box-shadow: #000 3px 3px 3px;
+    font-size: 60px;
+    font-family:Sphynxx;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+#skip-button:hover {
+    background-color: #783228;   
+    transition: 1s;
+}
+
+/*--- CANVA IN GAME STYLE ---*/
+.canva-in-game {
+    animation-delay: 3s;
+    animation: opacity 2s;
+    border-radius: 10px;
+    border: solid 3px #efae6c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    width: 1000px; 
+    height: justify;
+    background-color: #efae6c;
+}
+.player-status {
+    color: #783228;
+    font-family: Macondo;
+    font-size: 40px
+}
+
+#theme {
+    margin-left: 40px;;
+}
+.span-title {
+    text-shadow: #000 3px 3px 7px;
+    color: #fff;
+}
+#timer-span {
+    margin-left: 80px;
+}
+#timer-ending {
+    color:#cd351d;
+}
+
+#wrong-letter-span,
+#wrong-letters-container {
+    display: flex;
+    justify-content: center;
+    color: #783228 ;
+    font-family: Macondo;
+    font-size: 40px
+}
+
+#container-game {
+    background-color: #f9d597;
+    background-size: 20%;
+    width: 100%;
+    height: 20%;
+}
+.right-letter-container {
+    align-items: center;
+    
+    color: #783228;
+
+    display: flex;
+
+    font-family: sphynxx;
+    font-size: 80px;
+    
+    justify-content: center;
+
+    letter-spacing: 30px;
+
+    text-shadow: #efae6c 3px 3px 3px ;
+
+}
+
+
+#game-over-canva {
+    animation-delay: 3s;
+    animation: opacity 2s;
+    border-radius: 10px;
+    border: solid 3px #efae6c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    width: 1000px; 
+    height: 800px;
+    background-color: #efae6c;
+}
+
+#game-over-text {
+    text-shadow: #000000 3px 3px 5px;
+    color: #f9d597;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: Sphynxx;
+    font-size: 90px;
+}
+#replay-button {
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    box-shadow: #000 3px 3px 3px;
+    font-size: 60px;
+    font-family:Sphynxx;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+#replay-button:hover {
+    background-color: #783228;   
+    transition: 1s;
+}
+
+footer {
+    margin-top: 400px;
+    width: 100%;
+    background-color: #f9d597;
+}
+.credits {
+    text-align: center;
+}
+#lists {
+    display: flex;
+    justify-content: center;
+}
