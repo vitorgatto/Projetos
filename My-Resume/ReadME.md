@@ -12,8 +12,8 @@ Faço cursos gratuitos, pois, por enquanto, não tenho verbas para fazer um curs
  
 # LAYOUT
 
-### HOME PAGE 1
-![rasume home](./my-resume.png)
+### Main Page
+![resume home](./my-resume.png)
 
 # CONECTE-SE COMIGO!
   ## WHATS APP
