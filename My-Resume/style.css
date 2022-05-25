@@ -1,0 +1,210 @@
+/*KEYFRAMES -----------*/
+@keyframes  opacity {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 80%;
+    }
+}
+@keyframes slideRight {
+    0% {
+        width: 10px;
+    }
+    100% {
+        width: 800px;
+    }
+}
+@keyframes grow-bar {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: fit-content;
+    }
+}
+@keyframes blink-cursor {
+    from {
+        border-right-color: rgba(0, 255, 0, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+@keyframes grow-letter {
+    0% {
+        font-size: 30px;
+    }
+    100% {
+        font-size: 40px;
+    }
+}
+
+
+/* PAGE STYLE --------- */
+body,html {
+    height: 100%;
+    margin: 0px;
+    animation: opacity;
+}
+body {
+    animation-duration: 3s;
+}
+
+.background {
+    background-color: #000 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.title {
+    padding-bottom: 60px;
+}
+.title,
+#page-title,
+#page-subtitle {
+    font-size: 60px;
+    opacity: 80%;
+    margin: 0px;
+    text-align: center;
+    display:block;
+    font-family: Share Tech Mono;
+    margin: 0px;
+    background-color: rgb(173, 239, 189);
+    text-shadow: rgb(0, 0, 0) 1px 3px 2px ;
+}
+#page-title {
+    color: rgb(227, 75, 222);
+    font-size: 100px;
+
+}
+#page-subtitle {
+    color: rgb(0, 255, 0);
+    font-size: 40px;
+}
+
+/*RESUME SECTION --------*/
+
+
+#me-image {
+    max-height: 1980px ;
+    margin: 0px;
+    zoom: 40%;
+    border-right: rgb(173, 239, 189) solid 50px;
+    border-bottom: solid rgb(173, 239, 189) 50px;
+}
+.about-me {
+    display: flex;
+    opacity: 80%;
+    max-height: 800px;
+}
+.about-me > .my-resume {
+    display: block;
+    margin-right: 20px;
+}
+
+.section-title-style {
+    margin-right: 10px;
+    text-shadow: rgb(0, 0, 0) 1px 3px 2px ;
+    padding-right: 60px;
+    padding-left: 20px;
+
+    font-size: 40px;
+    font-family: Share Tech Mono;
+    background-color: rgb(173, 239, 189);
+    color: rgb(227, 75, 222);
+
+    display: block;
+    text-align: left;
+
+    animation: blink-cursor 700ms  infinite normal, 
+        slideRight 2s steps(20) 1s ;
+    white-space: nowrap;
+    border-right: #fff solid 10px;
+    max-width: 300px;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.resume-text-field {
+    letter-spacing: 1px;
+    animation: opacity 5s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(189, 99, 39);
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 20px;
+    display: block;
+    padding-left: 60px;
+    max-width: 500px;
+    margin-right: 20px;
+}
+.strong-word {
+    color: rgb(79, 79, 123);
+}
+.symbols {
+    color: blueviolet;
+}
+
+.skill-section-span {
+    font-size: 30px;
+    font-family:Share Tech Mono ;
+    max-width: 300px;
+    color: rgb(0, 255, 0);
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+.skill-name-span {
+    font-size: 20px;
+    font-family:Share Tech Mono ;
+    max-width: 300px;
+    color: rgb(79, 79, 123);
+    display: flex;
+    margin-bottom: 3px;
+    margin-top: 5px;
+
+}
+.skill-bar {
+    border-right: solid 4px rgb(0, 255, 0);
+    font-size: 20px;
+    color: #fff;
+    background-color: #fff;
+    margin-bottom: 10px;
+    
+}
+
+#contact-section {
+    display: flex;
+}
+
+footer {
+    display: flex;
+}
+
+/*LINKS --------- */
+
+.contact-links > a {
+    color: rgb(227, 75, 222) ;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.contact-links > a{
+    transition: 1s;
+    color: rgb(227, 75, 222) ;
+    font-size: 30px;
+    text-decoration: none;
+}
+.contact-links > a:hover{
+    color: rgb(79, 79, 123) ;
+    font-size: 40px;
+    text-decoration: none;
+    animation: grow-letter 1s;
+}
+.link-symbols {
+    color: yellow;
+}
