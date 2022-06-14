@@ -1,0 +1,806 @@
+
+:root 
+{
+    --body-bg-color: #eef0f3;
+    --ui-bg-color:#ffffff;
+    --purple: #BB99DD;
+}
+
+body 
+{
+    background-color: var(--body-bg-color);
+    margin: 0px;
+    overflow-y: visible;
+}
+body:hover
+{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--body-bg-color);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #bcc0c4;
+    width: 10px;
+    border-radius: 5px;
+}
+/* ========================== HEADER STYLE================*/
+header 
+{
+    box-shadow: 0px 3px 6px #d6d9de;
+    height: 70px;
+    background-color: var(--ui-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
+header > .search-container 
+{
+    display: flex;
+    align-items: center;
+    width: 370px;
+    height: 60px;
+    margin-right: 70px;
+    margin-left: 20px;
+}
+
+header > .search-container > #facebook-icon
+{
+    cursor: pointer;
+    width: 50px;
+}
+header > .search-container > #search-input-container 
+{
+    background-color: var(--body-bg-color);
+    width: 85%;
+    height: 85%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+header > .search-container > #search-input-container > #search-icon 
+{
+    width: 20px;
+    opacity: 70%;
+    margin-left: 5px;
+    margin-right: 6px;
+}
+
+header > .search-container > #search-input-container > #search-input
+{
+    background-color: var(--body-bg-color);
+    font-size: 18px;
+    width: 85%;
+    height: 50%;
+    border: none;
+}
+header > .search-container > #search-input-container > #search-input:focus 
+{
+    outline: none;
+}
+
+header > .pages-navigation 
+{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+
+}
+
+header > .pages-navigation > .navigation-icons-container 
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 34px;
+    padding: 10px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+header > .pages-navigation > #home-icon-container
+{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: solid 4px #1977f3;
+}
+
+header > .pages-navigation > .navigation-icons-container:hover 
+{
+    transition: 0.5s;
+    background-color: var(--body-bg-color);
+}
+
+header > .pages-navigation > .navigation-icons-container > .navigation-icon-link > .navigation-icons
+{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+header > .pages-navigation > .navigation-icons-container >  #groups-icon 
+{ /* didn't find an icon that matches with the facebook page's icon, so I did this mannipulation of this image*/
+
+    border: solid 1px #000;
+    border-radius: 50%;
+    padding: 4px;
+    width: 25px;
+    opacity: 60%;
+    height: 26px;
+}
+header > .pages-navigation > .navigation-icons-container >  #watch-icon 
+{ 
+    height: 37px;
+    width: 35px;
+}
+
+header > .user-options-container 
+{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    
+}
+
+header > .user-options-container > #user-profile-icon > #user-icon 
+{
+    width: 40px;
+    border-radius: 50%;
+}
+
+header > .user-options-container > #user-profile-icon 
+{
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header > .user-options-container > #user-profile-icon:hover 
+{
+    border-radius: 30px;
+    background-color: var(--body-bg-color);
+}
+
+header > .user-options-container > #user-profile-icon > span
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+
+}
+
+header > .user-options-container > #user-option-icons 
+{
+    display: flex;
+}
+
+header > .user-options-container > #user-option-icons > .user-accessibility 
+{
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: var(--body-bg-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+header > .user-options-container > #user-option-icons > .user-accessibility:hover
+{
+    transition: 0.5s;
+    background-color:#d6d9de ;
+}
+
+header > .user-options-container > #user-option-icons > div > img
+{
+    width: 25px;
+}
+
+
+/*==============SHORTCUTS CONTAINER STYLE=======================*/
+
+.shortcuts-container
+{
+    top: 70px;
+    position: fixed;
+    z-index: 1;
+    padding-top: 15px;
+    width: 435px;
+    max-height: 100vh;
+    overflow-y: hidden;
+
+}
+.shortcuts-container:hover
+{
+    transition-delay: 1s;
+    overflow-y: scroll;
+}
+
+.ui-section-title {
+    font-family: 'Segoe UI';
+    font-size: 26px;
+    color: #5d5d5d;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-section-edit-button {
+    font-family: 'Segoe UI';
+    color: #3b5998;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: 400;
+}
+.ui-section-edit-button:hover {
+    background-color: #d6d9de;
+    border-radius: 5px;
+}
+.ui-section-title:hover + span{
+    display: flex;
+}
+
+
+.features-container
+{
+    border-bottom:solid 1px #ccccce;
+}
+
+/*========================FEATURE-PROFILE =============*/
+.feature-profile-div,
+.feature-friends-div,
+.feature-marketplace-div,
+.feature-groups-div,
+.feature-watch-div,
+.feature-memories-div,
+.feature-show-more-div,
+.shortcut-div
+{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+/*DIVS HOVER ==== */
+.feature-profile-div:hover,
+.feature-friends-div:hover,
+.feature-marketplace-div:hover,
+.feature-groups-div:hover,
+.feature-watch-div:hover,
+.feature-memories-div:hover,
+.feature-show-more-div:hover,
+.shortcut-div:hover
+{
+    background-color: #d6d9de;
+}
+
+
+.feature-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.feature-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.feature-icon
+{
+    width: 42px;
+
+}
+#show-more-icon {
+    width: 15px;
+    margin-left: 10px;
+}
+#profile-icon {
+    border-radius: 50%;
+}
+.feature-span
+{
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/*===============FEED CONTAINER STYLE ======================*/
+.feed-container
+{
+    position: absolute;
+    top: 70px;
+    margin-left: 580px;
+    height: 100vh;
+    width: 710px;
+}
+
+.stories-container {
+    margin-top: 25px;
+    height: 250px;
+    display: flex;
+}
+
+.stories-content {
+    cursor: pointer;
+    margin: 0 5px;
+    height: 100%;
+}
+.storie-image {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.storie-image:hover{
+    opacity: 90%;
+}
+#my-stories-container {
+    border-radius: 15px;
+    width: 250px;
+    background-image: url(/assets/jo-6.PNG);
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+#my-stories-container:hover {
+    opacity: 90%;
+}
+.create-my-storie-button {
+    bottom: -180px;
+    display: block;
+    position: relative;
+    height: 70px;
+    background-color: #ffffff;
+    z-index: 2;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+}
+#create-storie-button 
+{
+    height: 40px;
+    position: relative;
+    left: 38px ;
+    top: -25px;
+    border: #ffffff solid 6px;
+    border-radius: 50%;
+}
+.create-stories-button-span-div 
+{
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    position: relative;
+    bottom: 23px;
+    text-align: center;
+}
+.stories-image-container
+{
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.storie-user-icon {
+    position: relative;
+    top: -240px;
+    left: 20px;
+    margin-right: 20px;
+    width: 45px;
+    border-radius: 50%;
+    border: 6px solid #1977f3;
+}
+.storie-user-name {
+    position: relative;
+    top: -70px;
+    left: -70px;
+    font-family: 'Segoe UI';
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+#stories-cinthia,
+#stories-felippe {
+    position: relative;
+    top: -95px;
+    left: 25px;
+}
+.post-container {
+    padding: 20px 20px 0px 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 3px #bcc0c4;
+}
+.post-container > div > img{
+    border-radius: 50%;
+    margin-right: 25px;
+    width: 60px;
+    cursor: pointer;
+}
+#post-container-div {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #d6d9de;
+    padding-bottom: 10px;
+}
+.post-input-container {
+    width: 80%;
+}
+#input-post {
+    border-radius: 40px;
+    outline: none;
+    height: 45px;
+    width: 100%;
+    background-color: var(--body-bg-color);
+    border: none;
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    padding-left: 20px;
+}
+#input-post:focus {
+    outline: none;
+}
+#input-post:hover {
+    background-color: #c3c8cc;
+}
+.post-container > .media-upload-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    
+}
+.post-container > .media-upload-buttons >  #upload-live-button-container > img,
+.post-container > .media-upload-buttons > #upload-photo-video-button-container > img {
+    width: 40px;
+}
+.post-container > .media-upload-buttons >  #upload-live-button-container,
+.post-container > .media-upload-buttons > #upload-photo-video-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+}
+.post-container > .media-upload-buttons >  #upload-live-button-container:hover,
+.post-container > .media-upload-buttons > #upload-photo-video-button-container:hover{
+    cursor: pointer;
+    background-color: var(--body-bg-color);
+    border-radius: 10px;
+}
+
+
+.upload-button-span {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 700;
+    color: #5d5d5d;
+    padding-left: 10px;
+}
+
+
+
+.create-room-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0px 3px 3px #bcc0c4;
+}
+.create-room-container > #create-room-button {
+    border: 1px solid #60a4fd90;
+    border-radius: 30px;
+    margin: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 50px;
+}
+.create-room-container > #create-room-button > img {
+    width: 35px;
+    margin-right: 3px;
+}
+.create-room-container > #create-room-button:hover {
+    background-color: #f5f5f5cb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.create-room-container > #create-room-button > #create-room-span {
+    color: #1977f3;
+    font-family: Segoe UI;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/*=================== POSTS STYLE =======================*/
+.posts-container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px 0px;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 6px #bcc0c4;
+}
+.poster-descriptions {
+    display: flex;
+    align-items: center;
+ 
+}
+.post-contact-icon {
+    width: 60px;
+    border-radius: 50%;
+    margin: 0px 15px;
+}
+.post-contact-icon:hover {
+    filter: contrast(90%);
+    cursor: pointer;
+}
+.post-contact-span-container {
+    font-family: 'Segoe UI' ;
+    margin-left: 10px;
+}
+.post-contact-description-span {
+    display: block;
+}
+.post-contact-description-span > .post-contact-name-span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.post-contact-description-span > .post-contact-date-span {
+    font-size: 16px;
+    font-weight: 500;
+    filter: contrast(60%);
+}
+.post-contact-description-span > .post-contact-name-span:hover,
+.post-contact-description-span > .post-contact-date-span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+.post-friends-icon {
+    width: 15px;
+    filter: contrast(40%);
+}
+.contact-post-legend {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    margin: 10px;
+}
+.contact-post-image-container {
+    border-top: 1px solid #bcc0c4;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.contact-post-image {
+    max-width: 590px;
+}
+
+.contact-post-iterations-div {
+    border-top: 1px solid #5d5d5d71;
+    border-bottom: 1px solid #5d5d5d71;
+    border-left: solid 3px #1977f3;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.iteration-icon {
+    width: 25px;
+    cursor:pointer;
+}
+.contacts-iteracted {
+    font-family: 'Segoe UI';
+    filter: contrast(70%);
+}
+.contacts-iteracted:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.iteract-buttons-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 70px;
+    border-bottom: 1px solid #5d5d5d71;
+}
+.iteract-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+}
+.iteract-button-container:hover{
+    background-color: var(--body-bg-color) ;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.iteract-button-icon {
+    width: 25px;
+    filter: contrast(30%);
+}
+.iteract-button-label {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    filter: contrast(30%);
+    margin-left: 10px;
+    font-size: 20px;
+}
+.comment-input-div {
+    display: flex;
+    align-items: center;
+}
+.comment-input-user-icon-container {
+    margin: 5px;
+}
+.comment-input-user-icon-container > .comment-input-user-profile-icon {
+    width: 50px;
+    border-radius: 50%;
+}
+.comment-input-user-profile-icon:hover {
+    cursor: pointer;
+    filter: contrast(90%);
+}
+.comment-input-container {
+    background-color: var(--body-bg-color);
+    border-radius: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.comment-input {
+    background-color: var(--body-bg-color);
+    height: 40px;
+    border-radius: 40px;
+    padding: 0px 5px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+.comment-input:focus{
+    outline: none;
+
+}
+
+.comment-input-features-icons{
+    display: flex;
+}
+
+.comment-feature-icon-container:hover {
+    background-color: #c3c8cc;
+    border-radius: 70%;
+}
+.comment-feature-icon {
+    width: 20px;
+    filter: contrast(20%);
+    margin: 5px;
+}
+.comment-feature-icon:hover{
+    cursor: pointer;
+}
+
+/*================ASIDE-RIGHT STYLE ============================*/
+
+.right-aside-container
+{
+    padding-top: 30px;
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    width: 435px;
+    max-height: 100vh;
+    margin-right: 5px;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+.right-aside-container:hover
+{
+    transition: 1s;
+    overflow-y:scroll;
+}
+
+.ads-container,
+.my-pages-container,
+.my-contacts-container
+{
+    padding: 25px 10px;
+    border-bottom:solid 1px #ccccce;
+    margin-bottom: 10px;
+
+}
+.ui-section-title > .contact-options-icons-container {
+    display: flex;
+}
+.contact-options-icons
+{
+    margin-right: 20px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-options-icons:hover
+{
+    cursor: pointer;
+    background-color: #d6d9de ;
+    border-radius: 50%;
+}
+.contact-feature-icon
+{
+    width: 25px;
+    opacity: 60%;
+}
+.contact-div {
+    margin: 10px 0px;
+    padding: 5px;
+}
+.contact-div:hover
+{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #d6d9de;
+}
+.contact-icon-container 
+{
+    display: flex;
+    align-items: center;
+}
+.contact-icon,
+.contact-icon-online {
+    margin-right: 20px;
+    width: 50px;
+    border-radius: 50%;
+}
+.contact-icon::after {
+    fill: crimson;
+}
+.online-status-icon {
+    width: 10px;
+    background-color: rgb(57, 143, 57);
+    border-radius: 10px;
+    position: relative;
+    right: 38px;
+    bottom: -2px;
+    border: var(--body-bg-color) solid 5px;
+    
+}
+.contact-name {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    font-size: 20px;
+}

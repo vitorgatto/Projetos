@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel='stylesheet' href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel='icon' type="image/png" href='/icons/Facebook_f_logo_(2019).svg.webp'>
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <img id='facebook-icon' src='icons/Facebook_f_logo_(2019).svg.webp'>
+            <div id="search-input-container">
+                <img id='search-icon'src='icons/search-interface-symbol.png'>
+                <input id='search-input' type='text' placeholder='Pesquisa no Facebook'>
+            </div>
+        </div>
+        <nav class='pages-navigation'>
+            <div class="navigation-icons-container" id="home-icon-container"><img class="navigation-icons" id="home-icon" src='icons/casa.png'></a></div>
+            <div class="navigation-icons-container" id="watch-icon-container"><img class="navigation-icons" id="watch-icon" src='icons/facebook.png'></div>
+            <div class="navigation-icons-container" id="groups-icon-container"><img class="navigation-icons" id="groups-icon" src='icons/user-group.png'></div>
+            <div class="navigation-icons-container" id="games-icon-container"><img class="navigation-icons" id="games-icon" src='icons/puzzle.png'></div>
+        </nav>
+        <div class="user-options-container">
+            <div id="user-profile-icon">
+                <img id="user-icon" src='assets/profile.png'><span id="user-name"> João </span>  
+            </div>
+            <span id='user-option-icons'>
+                <div class='user-accessibility'><img id='menu-icon' src='/icons/menu.png'></div>
+                <div class='user-accessibility'><img id='messeger-icon' src='/icons/messenger.png'></div>
+                <div class='user-accessibility'><img id='notify-icon' src='/icons/notification.png'></div>
+                <div class='user-accessibility'><img id='more-options-icon' src='/icons/caret-down.png'></div>
+            </span>
+        </div>   
+    </header>
+    <aside class='shortcuts-container'>
+        <div class="features-container"> 
+            <div class="feature-profile-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='assets/profile.png'>
+                </div><span class='feature-span'>João Gatto</span>
+            </div>
+            <div class="feature-friends-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' src='icons/followers.png'>
+                </div><span class="feature-span">Amigos</span>
+                <span class="feature-span">
+            </div>
+            <div class="feature-marketplace-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' src='icons/shopping-basket.png'>
+                </div><span class="feature-span">Marketplace</span>
+                <span class="feature-span">
+            </div>
+            <div class="feature-groups-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' src='icons/group.png'>
+                </div><span class="feature-span">Grupos</span>
+                <span class="feature-span">
+            </div>
+            <div class="feature-watch-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' src='icons/facebook (1).png'>
+                </div><span class="feature-span">Watch</span>
+                <span class="feature-span">
+            </div>
+            <div class="feature-memories-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' src='icons/clock.png'>
+                </div><span class="feature-span">Memórias</span>
+                <span class="feature-span">
+            </div>
+            <div class="feature-show-more-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='show-more-icon' src='icons/down-chevron.png'>
+                </div><span class="feature-span">Ver mais</span>
+                <span class="feature-span">
+            </div>
+        </div>
+        <div class="my-shortcuts-container">
+            <span class="ui-section-title">Os teus atalhos<span class='ui-section-edit-button'>Editar</span></span>
+            <div class="shortcut-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='icons/taichi-group.png'>
+                </div><span class='feature-span'>Grupo de Taichi</span>
+            </div>
+            <div class="shortcut-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='icons/programming-group.png'>
+                </div><span class='feature-span'>Developpers</span>
+            </div>
+            <div class="shortcut-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='icons/music-group.png'>
+                </div><span class='feature-span'>Músicos do Brasil</span>
+            </div>
+            <div class="shortcut-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='icons/divulga-group.png'>
+                </div><span class='feature-span'>Divulga Tudo</span>
+            </div>
+            <div class="shortcut-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='icons/developers-group.png'>
+                </div><span class='feature-span'>Tira Dúvidas de Programação</span>
+            </div>
+            <div class="shortcut-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='icons/empregos-group.png'>
+                </div><span class='feature-span'>Divulga Empregos SP</span>
+            </div>
+            <div class="shortcut-div">
+                <div class='feature-icon-container'>
+                    <img class='feature-icon' id='profile-icon' src='icons/music-group.png'>
+                </div><span class='feature-span'>Músicos do Brasil</span>
+            </div>
+        </div>
+    </aside>
+    <!-- FEED CONTAINER =================-->
+
+    <section class="feed-container">
+        <div class="stories-container">
+            <div class="stories-content" id='my-stories-container' >
+                <div class='create-my-storie-button'>
+                    <div class='create-stories-button-icon-div'><img id="create-storie-button" src="/icons/plus.png" ></div>
+                    <div class="create-stories-button-span-div"><span id="create-storie-span">Criar história</span></div>
+                </div>
+            </div>
+            <div class="stories-content" >
+                <div class="stories-image-container" id="stories-ellen">
+                    <img class="storie-image" src="/stories/storie-1.png" >
+                    <img class="storie-user-icon" src='/icons/contacts/Ellen.png'>
+                    <span class='storie-user-name'> Ellen </span>
+                </div>
+            </div>
+                <div class="stories-content" >
+                    <div class="stories-image-container" >
+                    <img class="storie-image" src="/stories/storie-2.png" >
+                    <img class="storie-user-icon" src='/icons/contacts/Felippe.png'>
+                    <span class='storie-user-name' id='stories-felippe'> Felippe </span>
+                </div>
+            </div>
+            <div class="stories-content" >
+                <div class="stories-image-container" id='stories-maria'>
+                    <img class="storie-image" src="/stories/storie-3.png" >
+                    <img class="storie-user-icon" src='/icons/contacts/Maria.png'>
+                    <span class='storie-user-name'> Maria </span>
+                </div>
+            </div>
+            <div class="stories-content" >
+                <div class="stories-image-container" >
+                    <img class="storie-image" src="/stories/storie-4.png" >
+                    <img class="storie-user-icon" src='/icons/contacts/Cinthia.png'>
+                    <span class='storie-user-name' id='stories-cinthia'> Cinthia </span>
+                </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div id='post-container-div'> 
+                <img class='feature-icon' src='/assets/profile.png'>
+                <div class='post-input-container'>
+                    <input type="text" id='input-post' placeholder="No que está pensando hoje?">
+                </div>
+            </div>
+            <div class="media-upload-buttons">
+                <div id='upload-live-button-container'><img src='/icons/facebook (2).png'><span class='upload-button-span'>Vídeo direto</span>
+                </div>
+
+                <div id='upload-photo-video-button-container'><img src="/icons/photos.png"><span class='upload-button-span'>Foto/Vídeo</span>
+                </div>
+            </div>
+        </div>
+        <div class="create-room-container">
+            <div id="create-room-button">
+                <img src='/icons/add-video.png'>
+                <span id='create-room-span'> Criar Sala </span>
+            </div>
+            <div class="contacts-room-icons-container">
+                    <img class='contact-icon-online' src='icons/contacts/Cinthia.png'>
+                    <img class="online-status-icon" src='icons/circle.png'>
+            </div>
+            <div class="contacts-room-icons-container">
+                <img class='contact-icon-online' src='icons/contacts/Bruna.png'>
+                <img class="online-status-icon" src='icons/circle.png'>
+            </div>
+            <div class="contacts-room-icons-container">
+                <img class='contact-icon-online' src='icons/contacts/Fabio.png'>
+                <img class="online-status-icon" src='icons/circle.png'>
+            </div>
+            <div class="contacts-room-icons-container">
+                <img class='contact-icon-online' src='icons/contacts/Ingrid.png'>
+                <img class="online-status-icon" src='icons/circle.png'>
+            </div>
+            <div class="contacts-room-icons-container">
+                <img class='contact-icon-online' src='icons/contacts/richard.png'>
+                <img class="online-status-icon" src='icons/circle.png'>
+            </div>
+        </div>
+        <div class="posts-container">
+            <div class="post-content">
+                <div class="poster-descriptions"> 
+                    <div class="post-contact-icon-container">
+                        <img class='post-contact-icon'src='/icons/contacts/Ellen.png'>
+                    </div>        
+                    <div class="post-contact-span-container">
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-name-span'>Ellen</span>
+                    </div>
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-date-span'> Agora Mesmo <img class='post-friends-icon'src='/icons/friends.png'></span>
+                    </div>
+                    </div>
+                </div>
+                    <div class="contact-post-legend"> Só pra atualizar... </div>
+
+                    <div class="contact-post-container">
+                        <div class="contact-post-image-container">
+                            <img class='contact-post-image'src='/icons/contacts/Ellen.png'>
+                        </div>
+                        <div class="contact-post-iterations-div">
+                            <div class="contact-post-iteration-icons">
+                                <span class="iteration-icons">
+                                    <img class='iteration-icon'src='/icons/heart.png'>
+                                    <img class='iteration-icon' src='/icons/thumbs-down.png'>
+                                </span>
+                            </div>
+                            <div class="contacts-iteracted">
+                                <span class="contact-iteracted-name">
+                                    Felippe, Jorge, Cinthia e mais 30 pessoas
+                                </span>
+                            </div>
+                        </div>
+                        <div class="iteract-buttons-div">
+                            <div class="iteract-button-container" id='like-button-container'>
+                                <img class="iteract-button-icon" src='/icons/like.png'>
+                                <span class="iteract-button-label">Gosto</span>
+                            </div>
+                            <div class="iteract-button-container" id='comment-button-container'>
+                                <img class="iteract-button-icon" src='/icons/comment.png'>
+                                <span class="iteract-button-label">Comentar</span>
+                            </div>
+                            <div class="iteract-button-container" id='share-button-container'>
+                                <img class="iteract-button-icon" src='/icons/share.png'>
+                                <span class="iteract-button-label">Compartilhar</span>
+                            </div>
+                        </div>
+                        <div class="comment-input-div">
+                            <div class="comment-input-user-icon-container">
+                                <img class='comment-input-user-profile-icon' src="assets/profile.png">
+                            </div>
+                            <div class="comment-input-container">
+                                <input class='comment-input' type='text' placeholder="Escreva um comentário">
+                                <div class="comment-input-features-icons">
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/smile.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/camera.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src='icons/gif.png'></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/happy.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+    <!-- ==================== POST 2 =========================-->
+
+
+        <div class="posts-container">
+            <div class="post-content">
+                <div class="poster-descriptions"> 
+                    <div class="post-contact-icon-container">
+                        <img class='post-contact-icon' src='/icons/contacts/Fabio.png'>
+                    </div>        
+                    <div class="post-contact-span-container">
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-name-span'>Fabio</span>
+                    </div>
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-date-span'> 12 de junho às 14:20 <img class='post-friends-icon' src='/icons/world-wide-web.png'></span>
+                    </div>
+                    </div>
+                </div>
+                    <div class="contact-post-legend"> Finalmente hora de descansar 🤣🤣 </div>
+
+                    <div class="contact-post-container">
+                        <div class="contact-post-image-container">
+                            <img class='contact-post-image' src='/icons/contacts/posts/pexels-pixabay-271618.jpg'>
+                        </div>
+                        <div class="contact-post-iterations-div">
+                            <div class="contact-post-iteration-icons">
+                                <span class="iteration-icons">
+                                    <img class='iteration-icon'src='/icons/heart.png'>
+                                    <img class='iteration-icon' src='/icons/thumbs-down.png'>
+                                </span>
+                            </div>
+                            <div class="contacts-iteracted">
+                                <span class="contact-iteracted-name">
+                                    Jorge e mais 10 pessoas
+                                </span>
+                            </div>
+                        </div>
+                        <div class="iteract-buttons-div">
+                            <div class="iteract-button-container" id='like-button-container'>
+                                <img class="iteract-button-icon" src='/icons/like.png'>
+                                <span class="iteract-button-label">Gosto</span>
+                            </div>
+                            <div class="iteract-button-container" id='comment-button-container'>
+                                <img class="iteract-button-icon" src='/icons/comment.png'>
+                                <span class="iteract-button-label">Comentar</span>
+                            </div>
+                            <div class="iteract-button-container" id='share-button-container'>
+                                <img class="iteract-button-icon" src='/icons/share.png'>
+                                <span class="iteract-button-label">Compartilhar</span>
+                            </div>
+                        </div>
+                        <div class="comment-input-div">
+                            <div class="comment-input-user-icon-container">
+                                <img class='comment-input-user-profile-icon' src="assets/profile.png">
+                            </div>
+                            <div class="comment-input-container">
+                                <input class='comment-input' type='text' placeholder="Escreva um comentário">
+                                <div class="comment-input-features-icons">
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/smile.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/camera.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src='icons/gif.png'></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/happy.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- ================== POST 3 ===================-->
+        <div class="posts-container">
+            <div class="post-content">
+                <div class="poster-descriptions"> 
+                    <div class="post-contact-icon-container">
+                        <img class='post-contact-icon'     src='/icons/contacts/Cinthia.png '>
+                    </div>        
+                    <div class="post-contact-span-container">
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-name-span'>Cinthia</span>
+                    </div>
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-date-span'> 10 de junho às 9:40 <img class='post-friends-icon' src='/icons/world-wide-web.png'></span>
+                    </div>
+                    </div>
+                </div>
+                    <div class="contact-post-legend"> 💞💞💞💞 </div>
+
+                    <div class="contact-post-container">
+                        <div class="contact-post-image-container">
+                            <img class='contact-post-image' src='/icons/contacts/posts/pexels-helena-lopes-2253275.jpg'>
+                        </div>
+                        <div class="contact-post-iterations-div">
+                            <div class="contact-post-iteration-icons">
+                                <span class="iteration-icons">
+                                    <img class='iteration-icon'src='/icons/heart.png'>
+                                    <img class='iteration-icon' src='/icons/thumbs-down.png'>
+                                </span>
+                            </div>
+                            <div class="contacts-iteracted">
+                                <span class="contact-iteracted-name">
+                                    Jorge e mais 10 pessoas
+                                </span>
+                            </div>
+                        </div>
+                        <div class="iteract-buttons-div">
+                            <div class="iteract-button-container" id='like-button-container'>
+                                <img class="iteract-button-icon" src='/icons/like.png'>
+                                <span class="iteract-button-label">Gosto</span>
+                            </div>
+                            <div class="iteract-button-container" id='comment-button-container'>
+                                <img class="iteract-button-icon" src='/icons/comment.png'>
+                                <span class="iteract-button-label">Comentar</span>
+                            </div>
+                            <div class="iteract-button-container" id='share-button-container'>
+                                <img class="iteract-button-icon" src='/icons/share.png'>
+                                <span class="iteract-button-label">Compartilhar</span>
+                            </div>
+                        </div>
+                        <div class="comment-input-div">
+                            <div class="comment-input-user-icon-container">
+                                <img class='comment-input-user-profile-icon' src="assets/profile.png">
+                            </div>
+                            <div class="comment-input-container">
+                                <input class='comment-input' type='text' placeholder="Escreva um comentário">
+                                <div class="comment-input-features-icons">
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/smile.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/camera.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src='icons/gif.png'></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/happy.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!--  ========================== POST 4 =======================================-->
+        <div class="posts-container">
+            <div class="post-content">
+                <div class="poster-descriptions"> 
+                    <div class="post-contact-icon-container">
+                        <img class='post-contact-icon' src='/icons/contacts/Fabricio.png'>
+                    </div>        
+                    <div class="post-contact-span-container">
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-name-span'>Fabrício</span>
+                    </div>
+                    <div class="post-contact-description-span">
+                        <span class='post-contact-date-span'> 11 de junho às 20:50 <img class='post-friends-icon' src='/icons/friends.png'></span>
+                    </div>
+                    </div>
+                </div>
+                    <div class="contact-post-legend"> Gente, estou doando esses gatinhos, qualquer coisa me chama no messenger! </div>
+
+                    <div class="contact-post-container">
+                        <div class="contact-post-image-container">
+                            <img class='contact-post-image' src='/icons/contacts/posts/pexels-pixabay-45170.jpg'>
+                        </div>
+                        <div class="contact-post-iterations-div">
+                            <div class="contact-post-iteration-icons">
+                                <span class="iteration-icons">
+                                    <img class='iteration-icon'src='/icons/heart.png'>
+                                    <img class='iteration-icon' src='/icons/thumbs-down.png'>
+                                </span>
+                            </div>
+                            <div class="contacts-iteracted">
+                                <span class="contact-iteracted-name">
+                                    Cinthia e mais 40 pessoas
+                                </span>
+                            </div>
+                        </div>
+                        <div class="iteract-buttons-div">
+                            <div class="iteract-button-container" id='like-button-container'>
+                                <img class="iteract-button-icon" src='/icons/like.png'>
+                                <span class="iteract-button-label">Gosto</span>
+                            </div>
+                            <div class="iteract-button-container" id='comment-button-container'>
+                                <img class="iteract-button-icon" src='/icons/comment.png'>
+                                <span class="iteract-button-label">Comentar</span>
+                            </div>
+                            <div class="iteract-button-container" id='share-button-container'>
+                                <img class="iteract-button-icon" src='/icons/share.png'>
+                                <span class="iteract-button-label">Compartilhar</span>
+                            </div>
+                        </div>
+                        <div class="comment-input-div">
+                            <div class="comment-input-user-icon-container">
+                                <img class='comment-input-user-profile-icon' src="assets/profile.png">
+                            </div>
+                            <div class="comment-input-container">
+                                <input class='comment-input' type='text' placeholder="Escreva um comentário">
+                                <div class="comment-input-features-icons">
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/smile.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/camera.png"></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src='icons/gif.png'></div>
+                                    <div class="comment-feature-icon-container"><img class='comment-feature-icon' src="icons/happy.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS AND PAGES CONTAINER  ========== -->
+    <aside class="right-aside-container">
+        <div class="ads-container">
+            <span class="ui-section-title">Patrocinado</span>
+        </div>
+        <div class="my-pages-container">
+            <span class="ui-section-title">As tuas Páginas</span>
+        </div>
+        <div class="my-contacts-container">
+            <span class="ui-section-title">Contatos<div class='contact-options-icons-container'>
+                <div class="contact-options-icons"><img class='contact-feature-icon' id='icon-camera' src='/icons/video-camera.png'></div>
+                <div class="contact-options-icons"><img class='contact-feature-icon' id='search-icon'src='icons/search-interface-symbol.png'></div>
+                <div class="contact-options-icons"><img class='contact-feature-icon' id='icon-camera' src='/icons/more.png'></div>
+            </div></span>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <div>
+                         <img class='contact-icon-online' src='icons/contacts/Ana.png'>
+                         <img class="online-status-icon" src='icons/circle.png'>
+                    </div><span class="contact-name">Ana</span>    
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <div>
+                         <img class='contact-icon-online' src='icons/contacts/Bruna.png'>
+                         <img class="online-status-icon" src='icons/circle.png'>
+                    </div><span class="contact-name">Bruna</span>    
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <div>
+                         <img class='contact-icon-online' src='icons/contacts/Cinthia.png'>
+                         <img class="online-status-icon" src='icons/circle.png'>
+                    </div><span class="contact-name">Cinthia</span>    
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <div>
+                         <img class='contact-icon-online' src='icons/contacts/Ellen.png'>
+                         <img class="online-status-icon" src='icons/circle.png'>
+                    </div><span class="contact-name">Ellen</span>    
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <div>
+                         <img class='contact-icon-online' src='icons/contacts/Fabio.png'>
+                         <img class="online-status-icon" src='icons/circle.png'>
+                    </div><span class="contact-name">Fábio</span>    
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <div>
+                         <img class='contact-icon-online' src='icons/contacts/Fabricio.png'>
+                         <img class="online-status-icon" src='icons/circle.png'>
+                    </div><span class="contact-name">Fabrício</span>    
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <img class='contact-icon' src='icons/contacts/Felippe.png'><span class="contact-name">Felippe</span>
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <img class='contact-icon' src='icons/contacts/Ingrid.png'><span class="contact-name">Ingrid</span>
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <img class='contact-icon' src='icons/contacts/Jorge.png'><span class="contact-name">Jorge</span>
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <img class='contact-icon' src='icons/contacts/Maria.png'><span class="contact-name">Maria</span>
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-icon-container">
+                    <img class='contact-icon' src='icons/contacts/richard.png'><span class="contact-name">Richard</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <script src='script.js'></script>
+</body>
+</html>
