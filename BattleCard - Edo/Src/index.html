@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+
+    <!-- IMPORTS -->
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href='./index.css'>
+    <link rel='stylesheet' href='./components/css/container-initial-page.css'>
+    <link rel="stylesheet" href="./components/css/container-select-card-page.css">
+    <link rel="stylesheet" href="./components/css/container-in-game-page.css">
+    
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="./components/css/button.css">
+    <link rel='stylesheet' href="./components/css/cards.css">
+    <link rel='stylesheet' href="./components/css/skill-select.css">
+    <link rel="stylesheet" href="./components/css/end-game-container.css">
+
+
+    
+
+</head>
+<body>
+    <!-- AUDIOS -->
+    <audio id="audio-0" src="/sounds/Wadaiko Matsuriza - Kabuki Gomen-Jyo [Japanese drums].mp3"></audio>
+    <audio id='audio-1' src='/sounds/Skyrim Sound Effects - Level Up.mp3'></audio>
+    <audio id='audio-2' src='/sounds/Skyrim quest complete sound.mp3'> </audio>
+    <audio id="audio-3" src="/sounds/instinct.mp3"></audio>
+    <audio id="audio-4" src="/sounds/Shutter Click sound effect (no copyright ) (2).mp3"></audio>
+    <audio id="audio-5" src="/sounds/Sword Draw Sound Effect.mp3"></audio>
+    <audio id="audio-6" src="/sounds/Viking War Horn Sound Effect.mp3"></audio>
+    <audio id="audio-" src=""></audio>
+    <audio id="audio-" src=""></audio>
+
+
+<!-- GAME LAYOUT DEV -->
+    <container class="index-game-container">
+        <div id="container-initial-page">
+            
+            <div class="component-button-container">
+                <div id="background-title-container">
+                    <div id="background-title"></div>
+                 </div>
+                <div id="button-tutorial-container">
+                    <button class="button"> TUTORIAL </button>
+                </div>
+                <div id="button-play-container">
+                    <button class="button" onclick= "selectDeck()"> PLAY </button>
+                </div>
+                <div id="button-credits-container">
+                    <button class="button" > CRÉDITOS E DIREITOS </button>  
+                </div> 
+                
+            </div>
+
+            <div class="contact">
+                <span> criado por: João'Gatto </span> 
+            </div>
+        </div>
+        
+        <container id="container-selectCard-page">
+            <div id="select-card-background">
+                
+                <div id="container-my-cards"> 
+                    <p class="menu-span"> MINHAS CARTAS </p>
+                    <div class='my-cards-dropzone' id='my-cards-dropzone' draggrable='true'>
+                        <img class='card-image' id="card-yasuke"             src="/imgs/PNG/cards/YASUKE.png">
+                        <img class='card-image' id="card-date-masamune"      src="/imgs/PNG/cards/DATE-MASAMUNE.png">
+                        <img class='card-image' id="card-samurai-iniciante"  src="/imgs/PNG/cards/SAMURAI-INICIANTE.png">
+                        <img class='card-image' id="card-samurai-obscuro"    src="/imgs/PNG/cards/SAMURAI-OBSCURO.png">
+                        <img class='card-image' id="card-oda-nobunaga"       src="/imgs/PNG/cards/ODA-NOBUNAGA.png">
+                        <img class='card-image' id="card-daymio"             src="/imgs/PNG/cards/DAYMIO.png">
+                        <img class="card-image" id="card-honda-tadakatsu"    src="/imgs/PNG/cards/HONDA-TADAKATSU.png">
+                        <img class="card-image" id="card-samurai-adepto"     src="/imgs/PNG/cards/SAMURAI-ADEPTO.png">
+                        <img class="card-image" id="card-shogun"             src="/imgs/PNG/cards/SHOGUN.png">
+                        <img class="card-image" id="card-tokugawa-ieyasu"    src="/imgs/PNG/cards/TOKUGAWA-IEYASU.png">
+                        <img class="card-image" id="card-toyotomi-hideoshi"  src="/imgs/PNG/cards/TOYOTOMI-HIDEOSHI.png">
+                        <img class="card-image" id="card-comandante"         src="/imgs/PNG/cards/COMANDANTE.png">
+                    </div>
+                </div>
+
+                <div id='my-deck' class="container-my-deck">
+
+                    <div class="menu-span"> MEU DECK 
+                            <button onclick = 'startGame()' class="button" id="button-start-game"> COMEÇAR JOGO </button>  
+                    </div> 
+                        
+                    <div class="my-deck-dropzone" id="my-deck-dropzone" draggable="true" title='Escolha ao menos 3 cartas para começar.'>
+                        <!-- CARDS ARE DRAGGED HERE-->
+                    </div>
+                       
+                </div>
+             
+            </div>
+        </container>
+
+
+        <container id="container-in-game-page">
+            <div id="in-game-background" style='color:white'>
+                <div id="in-game-players-decks-container">
+                    <span id='span-title-enemyDeck' class="deck-title-span"> ENEMY DECK </span>
+                    <div id='in-game-enemy-deck'>
+                        <!-- THE CARDS THAT ENEMY HAVE CHOSEN WILL BE HERE-->
+                       
+                    </div>
+                    
+                    <span id='span-title-myDeck' class="deck-title-span"> MY DECK </span>
+                    <div id="in-game-my-deck" draggable="true">
+
+                        <!-- THE CARDS THAT PLAYER HAVE CHOSEN WILL BE HERE-->
+                    </div>
+                </div>
+                
+                <div id="in-game-combat-board">
+                    <div id='combat-board-container'>
+                        <div id="combat-my-card-container">
+                            <span class="deck-title-span"> MEU HERÓI </span>
+                            <div id='my-hero-card-container'>
+                                <!-- MY COMBATENT CARD HERE-->
+                            </div>
+                        </div>
+
+                        <div id='heroes-stats-container'>
+                            <div>
+                                <span id='my-hero-skill-name'></span>
+                                <span id='my-hero-skill-value'></span>
+                            </div>
+                            <span  id='vs-icon' >VS</span>
+                            <div>
+                                <div>
+                                    <span id="enemy-hero-skill-name" ></span>
+                                    <span id='enemy-hero-skill-value'></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="combat-enemy-card-container">
+                            <span class="deck-title-span">  OPONENTE </span>
+                            <div id="enemy-card-container">
+                               <!-- COMBATENT CARD HERE -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="player-combat-options-container" >
+                        <div id="hero-chosen-container" title='Arraste sua carta aqui'>
+                            <span class="deck-title-span">ESCOLHA SEU COMBATENTE</span>
+                            <div id='combatent-image-container' class='card-image'> 
+                               <!-- CARD CHOSEN GOES HERE -->
+                            </div>
+
+                        </div>
+                        <div id='skill-choose-container' title='Escolha uma Habilidade para Combater'>
+
+                            <span class="deck-title-span">ESCOLHA A HABILIDADE</span>
+                            
+                                <select  id='select-skill' onChange="validateHeroStats()">
+                                    <option class='select-skill-option' value="" > ESCOLHA </option>
+                                    <option class='select-skill-option' value="attack" > ATAQUE</option>
+                                    <option class='select-skill-option' value="dexterity" > DESTREZA </option>
+                                    <option class='select-skill-option' value="wisdom" > SABEDORIA</option>
+                                    <option class='select-skill-option' value="constituition" > CONSTITUIÇÃO</option>
+                                </select> 
+
+                            <div id='chosen-skill-container'>
+                                <div id='chosen-skill-spans-container'>
+                                    <span id='chosen-skill-value'></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id='combat-button-container'>
+                            <button onclick= 'combat () ' class='button' id="combat-button"> COMBATER </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+        <div id='round-result-div'>
+            <span id='round-result-span'>VITÓRIA!</span>
+        </div>
+
+        <div id="end-game-container">
+            <h1 id='end-game-h1'> YOU WIN! </h1>
+                <button class='button' id='play-again-button'> JOGAR NOVAMENTE </button>
+                <button class='button' id='back-to-menu-button'> VOLTAR AO MENU </button>
+
+            <p> OBRIGADO POR JOGAR. SOU UM DESENVOLVEDOR FRONT-END INICIANTE E ESTOU A PROCURA DE UM EMPREGO. CASO TENHA GOSTADO DO MEU TRABALHO, DEIXO O LINK DO MEU GITHUB E LINKEDIN. OBRIGADO!  </p>
+            <nav id='credits-nav'>
+                <a class='link-label' href='https://www.github.com/vitorgatto' target='_blank'><img class='social-media-icon' src='/imgs/PNG/icons/github-sign.png  '>  GitHub </a> </span>
+                <a class='link-label' href='https://www.linkedin.com/in/joao-gatto/' target='_blank'><img class='social-media-icon' src='/imgs/PNG/icons/linkedin.png  '>  LinkedIn </a> </span>  
+            </nav>
+        </div>
+    </container>
+    
+
+    <button   onclick='showInitialPage()'>INITIAL PAGE</button>
+    <button   onclick="showSelectCardPage()"> CARD PAGE</button>
+    <button   onclick="showinGamePage()"> IN GAME PAGE</button>
+
+<script src='index.js'></script>
+<script src='/src/components/scripts/card-select-page-script.js'></script>
+<script src='/src/components/scripts/cards-script.js'></script>
+<script src='/src/components/scripts/in-game-script.js'></script>
+<script src='/src/components/scripts/validate-hero-script.js'></script>
+<script src="/src/components/scripts/oponent-script.js"></script>
+<script src="/src/components/scripts/combat-script.js"></script>
+<script src="/src/components/scripts/buttons.script.js"></script>
+
+
+</body>
+</html>
