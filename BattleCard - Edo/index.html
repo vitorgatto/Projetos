@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FAÇA SEU PEDIDO </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background ="images/background.png">
+<header>
+    <div class="cabecalho">
+        <h1 id="title"> BEM-VINDO AO <span id="hotPizza">HOT PIZZA! </span></h1>   
+    </div>
+</header> 
+    <div id='container'>
+        <h2 class="subtitle"> QUAL É A SUA FOME?</h2>
+        <div>
+            <span class='boxDescription'> SELECIONE O SABOR DA PIZZA </span>
+            <select id="selectSabor" class="boxChoice">
+                <option value=""> ... </option>
+                <option value="Muçarela"> Muçarela </option>
+                <option value="4queijos"> 4 Queijos </option>
+                <option value="Calabresa"> Calabresa </option>
+                <option value="Bahiana"> Bahiana </option>
+                <option value="Portuguesa"> Portuguesa </option>
+            </select>
+        </div>
+        <div> 
+            <span class='boxDescription'> SELECIONE O TAMANHO DA PIZZA </span>
+            <select id="selectTamanho" class="boxChoice">
+                <option value=""> ... </option>
+                <option value="Brotinho (4 pedaços)"> Brotinho (4 pedaços) </option>
+                <option value="Média (8 pedaços)"> Média (8 pedaços) </option>
+                <option value="Família (10 pedaços)"> Família (10 pedaços)</option>
+            </select>
+        </div>
+        <div id="borda"> 
+            <span class='boxDescription'> BORDA RECHEADA? </span>
+            <input onclick ='toogleCheckBoxTrue()' type="checkbox" name="bordaRecheada" >
+            <select class="boxChoice" id="comBorda">
+                <option value=''> Selecione a Borda </option>
+                <option id='bordaCatupiry' value="Catupiry"> Catupiry </option>
+                <option id='bordaCheddar' value="Cheddar"> Cheddar </option>
+            </select>
+        </div> 
+        <div style="margin-top: 20px;">
+            <span class='boxDescription' id="especPrefs"> ESPECIFICAR PREFERÊNCIAS </span><br>
+            <textarea id='prefs' type="text"></textarea>
+        </div>
+        <div id="submit" onclick="submit()">
+            CONCLUIR PEDIDO
+        </div>  
+    </div>
+    <div id="telaAguardando">
+        <h2 class="subtitle"> OBRIGADO!<br> POR FAVOR AGUARDE, ESTAMOS PREPARANDO SEU PEDIDO</h2>
+        <img id='gifPizza' src="https://acegif.com/wp-content/gifs/pizza-64.gif">
+        <div>
+            <div onclick='showNotas()' id="nota"> VER DETALHES DO PEDIDO </div>
+            <div id="pedido">
+                
+            </div>
+        </div>
+    </div>
+<script src='script.js'></script>
+</body>
+</html>
