@@ -1,0 +1,47 @@
+#end-game-container {
+
+    background-image: url(/imgs/PNG/backgrounds/BG-1.png);
+    background-position: center right;
+    background-size: cover;
+
+    position: absolute;
+    right: 220px;
+    top: 20px;
+
+    width: 1280px;
+    height: 550px;
+
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px #000;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+#end-game-h1 {
+    font-family: MedievalSharp;
+
+    color: white
+}
+
+#end-game-container > p {
+    color: white;
+    margin-top: 20px;
+}
+
+#credits-nav {
+    background-color: rgb(243, 241, 241);
+    margin-top: 100px;
+
+    padding: 3px;
+}
+
+#back-to-menu-button:hover,
+#play-again-button:hover {
+    transition: none;
+    font-size: 20px;
+    color: rgb(184, 180, 180);
+}

@@ -1,0 +1,64 @@
+.button {
+    width: 300px;
+    height: 100px;
+
+    margin-top: 5px;
+
+    background-image: url(/imgs/SVG/btn-border.svg);
+    background-size: cover;
+
+    border: none;
+    border-radius: 15px;
+   
+    color: #ecefda;
+
+    font-family: MedievalSharp;
+    font-size: 20px;
+
+}
+
+.button:hover {
+    transition: 1s;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#button-start-game-container {
+    display: flex;
+    justify-content: end;
+}
+#button-start-game {
+    color: white;
+    height: 30px;
+    background: linear-gradient(#222, #9b340f);
+    width: justify;
+
+}
+#button-start-game:hover {
+    font-size: 20px;
+    transition: none;
+    color: white;
+
+}
+
+.buttons {
+    height: 50px;
+    width: 100px;
+}
+
+#disabledButton {
+    color: #706c6c;
+    height: 30px;
+    background: linear-gradient(#222, #9b340f);
+    filter: saturate(10%); 
+    width: justify;
+
+}
+#disabledButton:hover {
+    color: gray;
+    cursor: default;
+    transition: none;
+    font-size: 20px;
+    color: #706c6c;
+
+}

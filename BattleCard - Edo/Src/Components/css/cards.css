@@ -1,0 +1,14 @@
+
+.card-image {
+    width: 180px;
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+.card-image:hover {
+    filter: saturate(60%);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #cecece;
+
+}

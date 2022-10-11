@@ -1,0 +1,19 @@
+#select-skill{
+    height: 100px;
+
+    text-align: center;
+
+    background-image: url(/imgs/PNG/backgrounds/BG-1.png);
+    background-size: cover;
+
+    font-family: MedievalSharp;
+    color: #ffff;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+#select-skill > option {
+    background-color: #1e1d14;
+    font-size: 20px;
+}

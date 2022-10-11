@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #150907;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b83d11;
+    height: 10px;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%
+    }
+}
+
+#select-card-background {
+    
+    width: 1280px;
+    height: 680px; 
+
+    background: url(/imgs/PNG/backgrounds/BG-CHOOSE-DECK.png);
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-evenly;
+    
+    animation: fadeIn 5s;
+
+}
+
+#container-my-cards {
+
+    margin-top: 40px;
+    color: white;
+    width: 36%;
+
+    display: block;
+
+    overflow-y: scroll;
+}
+.menu-span {
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: MedievalSharp;
+}
+.container-my-deck{
+    margin-top: 40px;
+    color: white;
+    width: 50%;
+
+    overflow-y: scroll;
+}
+
+.my-deck-dropzone {
+    height: 500px;
+}

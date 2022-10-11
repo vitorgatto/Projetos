@@ -1,0 +1,232 @@
+#in-game-background{
+    background-image: url(/imgs/PNG/backgrounds/BG-IN-GAME.png);
+    height: 100%;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#in-game-players-decks-container {
+    display: flex;
+    
+    flex-flow: column;
+
+}
+
+
+
+#in-game-enemy-deck,
+#in-game-my-deck {
+    overflow-y: scroll ;
+    max-height: 280px;
+    max-width: 610px;
+
+    min-height: 280px;
+
+    padding-left: 10px;
+}
+
+#span-title-myDeck{
+    margin: 50px 0px 0px 30px;
+}
+#span-title-enemyDeck {
+    margin: 10px 0px 8px 30px;
+}
+.deck-title-span {
+    font-family: MedievalSharp;
+}
+#span-title-enemyDeck,
+#span-title-myDeck {
+
+    border-bottom: 1px solid rgba(146, 146, 122, 0.3);
+    width: 560px;
+}
+
+
+#in-game-combat-board {
+   width: 649px;
+}
+
+#combat-board-container {
+    padding-top: 50px;
+    height: 354px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+#player-combat-options-container{
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#combat-my-card-container, 
+#combat-enemy-card-container {
+    text-align: center;
+}
+
+
+#heroes-stats-container{
+   margin-top: 25px;
+   padding: 10px;
+
+   height: 265px;
+   width: 200px;
+}
+#my-hero-card, 
+#enemy-hero-card:hover {
+    box-shadow: none;
+    filter: none;
+    cursor: default;
+}
+
+#vs-icon{
+    display: flex;
+    justify-content: center;
+
+    color: brown;
+
+    font-family: MedievalSharp;
+    font-size: 100px;
+}
+
+#my-hero-skill-name {
+    display: flex;
+    justify-content: start;
+
+    color: rgb(122, 179, 100);
+    font-size: 30px;
+
+    text-shadow: rgb(122, 179, 100) 0px 0px 3px;
+}
+#my-hero-skill-value {
+    color: #fff;
+    font-size: 40px;
+
+    text-shadow: rgb(122, 179, 100) 0px 3px 3px;
+}
+
+#enemy-hero-skill-name {
+    display: flex;
+    justify-content: end;
+
+    font-size: 30px;
+    color: rgb(202, 71, 71);
+
+    text-shadow: rgb(202, 71, 71) 0px 0px 3px;
+}
+#enemy-hero-skill-value {
+    display: flex;
+    justify-content: end;
+
+    text-shadow: rgb(202, 71, 71) 0px 3px 3px;
+
+    color: #fff;
+    font-size: 40px;
+}
+
+
+
+
+#hero-chosen-container, 
+#skill-choose-container,
+#combat-button-container {
+    text-align: center;
+
+    border-radius: 10px;
+
+    background-image: url(/imgs/JPG/pexels-pixabay-235985.jpg);
+
+    background-size: contain;
+
+    margin: 20px;
+
+    width: 200px;
+    height: 235px;
+}
+#hero-chosen-container > span,
+#skill-choose-container > span,
+#combat-button-container > span {
+    color: black;
+    text-shadow: 0px 0px 5px #ffffff;
+}
+#skill-choose-container {
+    display: flex;
+    flex-direction: column;   
+    
+    justify-content: space-evenly;
+}
+
+
+#combatent-image-container {
+    box-shadow: 0px 0px 6px #000;
+    border: 1px solid rgba(58, 56, 56);
+
+    height: max-content;
+    min-height: 197px;
+}
+#combatent-image-container > .card-image {
+    zoom: 63%;
+    min-height: 195px;
+}
+
+#combat-button-container {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+}
+#combat-button {
+    width: 100px;
+    height: 50px;
+
+    font-size: 15px;
+
+    background-position: center;
+}
+#combat-button:hover {
+    transition: none;
+    filter: saturate(50%);
+
+}
+
+#chosen-skill-spans-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#chosen-skill-name,
+#chosen-skill-value {
+    height: 30px;
+
+    font-family: MedievalSharp;
+}
+
+#chosen-skill-name{
+    color: rgb(129, 42, 42);
+    font-size: 30px;
+}
+
+#chosen-skill-value{
+    color: #222;
+    font-size: 40px;
+}
+
+
+#round-result-span {
+    color: rgb(129, 42, 42);
+    font-size: 50px;
+
+    font-family: MedievalSharp;
+
+    position: absolute;
+
+    top: 30px;
+    right: 450px;
+}

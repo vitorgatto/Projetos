@@ -1,0 +1,68 @@
+@keyframes zoom {
+    0% {
+        background-size: 150%;
+        background-position: right;
+    }
+    100% {
+        background-size: 100%;
+        background-position: center;
+    }
+}
+
+#container-initial-page {
+    text-align: center;
+    height: 680px;
+    width: 1280px;
+
+    animation: zoom 100s;
+    background-image: url(/imgs/PNG/backgrounds/BG-1.png);
+    background-size: cover;
+}
+
+#background-title {
+    height: 300px;
+    margin-left: 300px;
+
+    background-image: url(/imgs/PNG/components/BG-Title.png);
+    background-repeat: no-repeat;
+
+}
+
+.component-button-container{
+    display: block;
+    justify-content: center;
+    
+    padding-top: 0px;
+
+    margin-right: 70px;
+
+
+}
+
+.contact {
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+    font-size: 20px;
+    color: #ececec;
+}
+
+.link-label{
+   text-decoration: none;
+   color: inherit;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin: 10px 0px;
+
+}
+.link-label:hover {
+    color: #646363;
+ }
+
+.social-media-icon{
+    height: 30px;
+    margin-right: 10px;
+}
